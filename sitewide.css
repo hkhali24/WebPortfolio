@@ -1,8 +1,27 @@
 html {
-    font-size: 15;
+    font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
     font-style: normal;
     text-align: center;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
+
+body{
+    background: beige;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: olive;
+    text-shadow: -.1rem -.1rem navy;
+    letter-spacing: 0.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2, h3 {
+    letter-spacing: 0.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
