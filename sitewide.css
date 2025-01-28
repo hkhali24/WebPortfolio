@@ -13,8 +13,8 @@ body{
 }
 
 h1 {
-    color: olive;
-    text-shadow: -.1rem -.1rem navy;
+    color: navy;
+    text-shadow: -.2rem -.1rem orange;
     letter-spacing: 0.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,5 +23,51 @@ h2, h3 {
     letter-spacing: 0.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+nav{
+    border: black double;
+    background: white;
+    border-radius: 4rem;
+    margin: 1rem;
+}
+
+
+nav a{
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    padding: .5rem;
+    list-style: none;
+}
+
+li.contains ul{
+    display: none;
+}
+
+li.contains:hover ul {
+    background: white;
+    display: block;
+    position: absolute;
+  }
+  
+li.contains li {
+    font-size: .9rem;
+    float: none;
+  }
+
 
 
