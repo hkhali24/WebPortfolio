@@ -54,17 +54,17 @@ nav li{
     list-style: none;
 }
 
-li.contains ul{
+li.dropdown ul{
     display: none;
 }
 
-li.contains:hover ul {
+li.dropdown:hover ul {
     background: white;
     display: block;
     position: absolute;
   }
   
-li.contains li {
+li.dropdown li {
     font-size: .9rem;
     float: none;
   }
