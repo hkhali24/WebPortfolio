@@ -29,6 +29,8 @@ nav{
     background: white;
     border-radius: 4rem;
     margin: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 nav a{
@@ -50,7 +52,6 @@ nav ul{
 }
 
 nav li{
-    padding: .5rem;
     list-style: none;
     float: left;
 }
