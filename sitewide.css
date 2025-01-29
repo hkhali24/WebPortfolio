@@ -31,10 +31,10 @@ nav{
     margin: 1rem;
 }
 
-
 nav a{
     padding: 1rem;
     text-decoration: none;
+    display: block;
 }
 
 nav::after{
@@ -52,6 +52,15 @@ nav ul{
 nav li{
     padding: .5rem;
     list-style: none;
+    float: left;
+}
+
+nav a:hover {
+    background: rgb(240, 240, 240);
+}
+
+nav a:active {
+    color:#cce
 }
 
 li.dropdown ul{
@@ -64,7 +73,7 @@ li.dropdown:hover ul {
     position: absolute;
   }
   
-li.dropdown li {
+li.dropdown li { 
     font-size: .9rem;
     float: none;
   }
