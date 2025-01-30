@@ -1,9 +1,11 @@
 article {
-    border: 1px double black;
+    border: black double;
+    border-radius: 4rem;
     margin:  auto;
     padding: 1rem;
     background-color: white;
     display: block;
+    box-sizing: border-box;
 }
 
 article img {
