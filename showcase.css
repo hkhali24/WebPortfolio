@@ -1,0 +1,9 @@
+article {
+    border: 1px double black;
+    margin: .6rem;
+    padding: .6rem;
+}
+
+img {
+    float: center;
+}
