@@ -1,9 +1,15 @@
 article {
     border: 1px double black;
-    margin: .6rem;
-    padding: .6rem;
+    margin:  1rem;
+    padding: 1rem;
+    background-color: aliceblue;
+    display: block;
 }
 
 img {
     float: center;
+}
+
+p {
+    line-height: 1.2rem;
 }
