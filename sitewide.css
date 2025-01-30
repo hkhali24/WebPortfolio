@@ -64,6 +64,10 @@ nav a:active {
     color:#cce
 }
 
+a:hover {
+    color: orange;
+}
+
 li.dropdown ul{
     display: none;
 }
