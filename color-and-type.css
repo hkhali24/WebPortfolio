@@ -12,3 +12,11 @@ main {
 h2 {
     text-align: center;
 }
+
+article img {
+    float: right;
+}
+
+dt {
+    font-weight: bold;
+}
