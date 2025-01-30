@@ -1,0 +1,18 @@
+article {
+    border: black double;
+    border-radius: 4rem;
+    margin:  auto;
+    padding: 1rem;
+    background-color: white;
+    display: block;
+    box-sizing: border-box;
+}
+
+article img {
+    float: right;
+    margin: 1rem auto; 
+}
+
+p {
+    line-height: 1.2rem;
+}
