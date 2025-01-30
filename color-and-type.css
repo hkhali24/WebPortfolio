@@ -1,5 +1,12 @@
 main {
     text-align: left;
+    border: black double;
+    border-radius: 3rem;
+    margin:  auto;
+    padding: 1rem;
+    background-color: aliceblue;
+    display: block;
+    box-sizing: border-box;
 }
 
 h2 {
