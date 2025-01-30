@@ -1,13 +1,14 @@
 article {
     border: 1px double black;
-    margin:  1rem;
+    margin:  auto;
     padding: 1rem;
-    background-color: aliceblue;
+    background-color: white;
     display: block;
 }
 
-img {
+article img {
     float: center;
+    margin: 1rem auto; 
 }
 
 p {
