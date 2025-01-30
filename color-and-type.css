@@ -15,8 +15,21 @@ h2 {
 
 article img {
     float: right;
+    margin: 0.5rem 0.5rem 0.2rem;
+}
+
+article p:last-child::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 dt {
     font-weight: bold;
 }
+
+p{
+    text-align: left;
+}
+
+
