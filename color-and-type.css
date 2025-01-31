@@ -24,6 +24,10 @@ article p:last-child::after {
     clear: both;
 }
 
+#article {
+    overflow: hidden;
+}
+
 dt {
     font-weight: bold;
 }
