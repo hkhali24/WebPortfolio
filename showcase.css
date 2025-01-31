@@ -6,6 +6,7 @@ article {
     background-color: white;
     display: block;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 article img {
