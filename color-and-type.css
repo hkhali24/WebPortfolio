@@ -26,7 +26,6 @@ article {
     position: absolute;
 }
 
-
 article p:last-child::after {
     content: "";
     display: block;
