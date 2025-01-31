@@ -1,22 +1,31 @@
 main {
-    text-align: left;
     border: black double;
-    border-radius: 3rem;
-    margin:  auto;
+    border-radius: 4rem;
+    margin:  1rem auto 8rem;
     padding: 1rem;
     background-color: aliceblue;
     display: block;
     box-sizing: border-box;
+    text-align: left;
 }
 
 h2 {
     text-align: center;
 }
 
+article {
+    margin:1rem auto;
+    padding: 1 rem;
+    overflow: hidden;
+}
+
 article img {
     float: right;
     margin: 0.5rem 0.5rem 0.2rem;
+    padding: 1rem;
+    position: relative;
 }
+
 
 article p:last-child::after {
     content: "";
@@ -24,16 +33,9 @@ article p:last-child::after {
     clear: both;
 }
 
-#article {
-    overflow: hidden;
-}
-
 dt {
     font-weight: bold;
 }
 
-p{
-    text-align: left;
-}
 
 
