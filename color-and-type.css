@@ -19,11 +19,11 @@ article {
     overflow: hidden;
 }
 
-article img {
+.article img {
     float: right;
     margin: 0.5rem 0.5rem 0.2rem;
     padding: 1rem;
-    position: relative;
+    position: absolute;
 }
 
 
