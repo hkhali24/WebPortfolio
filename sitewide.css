@@ -50,6 +50,7 @@ nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
+    display: fixed;
 }
 
 nav li{
@@ -91,4 +92,9 @@ li.dropdown li {
     position: center;
     margin: 2rem;
     padding: 2rem;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
   }
