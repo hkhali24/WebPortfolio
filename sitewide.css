@@ -6,6 +6,7 @@ html {
     text-align: center;
     letter-spacing: 0.1rem;
     white-space: normal;
+    word-break: normal;
 }
 
 body{
