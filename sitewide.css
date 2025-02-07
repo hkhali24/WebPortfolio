@@ -123,6 +123,10 @@ li.dropdown li {
         color:black;
         position: absolute;
     } 
+
+    nav ul {
+        display: none;
+    }
   }
 
   #houseicon{ 
@@ -131,5 +135,4 @@ li.dropdown li {
 
   nav ul{
     background: beige;
-    display: none;
   }
