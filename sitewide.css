@@ -81,7 +81,13 @@ nav a:active {
 }
 
 a:hover {
-    color: orange;
+    text-decoration: underline;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: navy;
 }
 
 li.dropdown ul{
