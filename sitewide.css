@@ -92,6 +92,7 @@ a:visited {
 
 li.dropdown ul{
     display: none;
+    float: none;
 }
 
 li.dropdown:hover ul {
