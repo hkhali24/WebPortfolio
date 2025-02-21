@@ -32,7 +32,7 @@ window.addEventListener('load',function () {
     const LargeFont = document.getElementById ('largefont');
 
     SmallFont.addEventListener ('click', function () {
-        const fontSize = changeFontSize (p, -1);
+        const fontSize = changeFontSize (p, -3);
         console.log (fontSize);
     });
 
@@ -41,13 +41,8 @@ window.addEventListener('load',function () {
         console.log (fontSize);
     });
 
-    MediumFont.addEventListener ('click', function () {
-        const fontSize = changeFontSize (p, 2);
-        console.log (fontSize);
-    });
-
     LargeFont.addEventListener ('click', function () {
-        const fontSize = changeFontSize (p, 3);
+        const fontSize = changeFontSize (p, 2);
         console.log (fontSize);
     });
 
