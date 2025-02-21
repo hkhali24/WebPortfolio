@@ -2,6 +2,7 @@
 function changeBg (e) {
     const color = e.currentTarget.id;
     document.body.style.backgroundColor =color;
+    document.body.style.transition = 'background-color 2s ease';
 }
 
 window.addEventListener('load',function () {
