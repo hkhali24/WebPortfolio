@@ -7,6 +7,32 @@
     <link href="sitewide.css" rel="stylesheet">
     <script src="JavaScript.js"></script>
     <script src="https://kit.fontawesome.com/92f7cefde1.js" crossorigin="anonymous"></script>
+    <script>
+        function toggleDisplay(elem) {
+            if (getComputedStyle (elem).display === "none" ){
+                elem.style.display = "block";
+            } else {
+                elem.style.display = "none";
+            }
+        }
+
+        function toogleAnswer (e) {
+            const section = e.currentTarget;
+            const experience = section.nextElementSibling;
+        toggleDisplay (experience);
+            const star = section.querySelectorAll ('.star');
+            star.classList.toggle ('fa-star-down');
+            star.classList.toggle ('fa-star-up');
+        }
+
+        windoq.addEventListener('load'), function (e) {
+            const sections = document.querySelectorAll('.section');
+            for (section of sections) {
+            section.addEventListener('click', toogleAnswer);
+            }
+        }
+
+    </script>
     <style>
         h2 {
             text-decoration: underline;
@@ -55,15 +81,18 @@
             </ul></li> 
     </nav>
     <main>
-    <section id="Education">
+    <section id="section">
     <h2><strong>Education</strong></h2>
+    <i class="fa-solid fa-star"></i>
+    <div class="experience">
         <div>Bachelors in Marketing</div>
         <div>Authentic Business University</div>
         <div>Graduated 2019</div>
+    </div>
     </section>
-    <section id="WorkExperience">
-    <h2><strong>Work Experience</strong></h2>
-        <div><strong>
+    <section id="section">
+    <h2><strong>Work Experience</strong></h2><i class="fa-solid fa-star"></i>
+    <div class="experience"><strong>
             Product Designer
             2022-Present
             </strong>
@@ -97,8 +126,9 @@
             </ul>
         </div>
     </section>
-    <section id="Skills">
-        <h2><strong>Skills</strong></h2>
+    <section id="section">
+        <h2><strong>Skills</strong></h2><i class="fa-solid fa-star"></i>
+     <div class="experience">
         <ul>
             <li>Adobe Animate</li>
             <li>Adobe Photoshop</li>
@@ -106,6 +136,7 @@
             <li>Microsoft Teams, Word, PowerPoint, and Excel</li>
             <li>Design Software 2.0</li>
         </ul>
+    </div>
     </section>
     </main>
 <footer>
