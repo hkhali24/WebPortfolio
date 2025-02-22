@@ -42,12 +42,10 @@ window.addEventListener('load',function () {
     });
 
     LargeFont.addEventListener ('click', function () {
-        const fontSize = changeFontSize (p, 2);
+        const fontSize = changeFontSize (p, 4);
         console.log (fontSize);
     });
 
 });
-
-
 
     
