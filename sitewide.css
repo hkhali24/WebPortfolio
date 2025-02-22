@@ -127,11 +127,10 @@ li.dropdown li {
         left:0.1rem;
         color:black;
         position: absolute;
-    } 
-
     nav ul {
         display: none;
     }
+}
   }
 
   #houseicon{ 
