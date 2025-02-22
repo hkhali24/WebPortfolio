@@ -16,21 +16,23 @@
             }
         }
 
-        function toogleAnswer (e) {
+        function toogleExperience (e) {
             const section = e.currentTarget;
             const experience = section.nextElementSibling;
         toggleDisplay (experience);
-            const star = section.querySelectorAll ('.star');
-            star.classList.toggle ('fa-star-down');
-            star.classList.toggle ('fa-star-up');
-        }
 
-        windoq.addEventListener('load'), function (e) {
-            const sections = document.querySelectorAll('.section');
-            for (section of sections) {
-            section.addEventListener('click', toogleAnswer);
-            }
+            const star = section.querySelector('.fa-star');
+            if (star) {
+                star.classList.toggle ('fa-star-click');
         }
+    }
+
+        window.addEventListener('load', function () {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(function (section) {
+            section.addEventListener('click', toogleExperience);
+            });
+        });
 
     </script>
     <style>
@@ -42,6 +44,9 @@
         ul {
             text-align: center;
             list-style-position: inside;
+        }
+        .fa-star {
+            float: center;
         }
 
     </style>
@@ -81,17 +86,20 @@
             </ul></li> 
     </nav>
     <main>
-    <section id="section">
-    <h2><strong>Education</strong></h2>
+    <div class="section">
+    </i><h2><strong>Education</strong></h2>
     <i class="fa-solid fa-star"></i>
+    </div>
     <div class="experience">
         <div>Bachelors in Marketing</div>
         <div>Authentic Business University</div>
         <div>Graduated 2019</div>
     </div>
     </section>
-    <section id="section">
-    <h2><strong>Work Experience</strong></h2><i class="fa-solid fa-star"></i>
+    <div class="section">
+    </i><h2><strong>Work Experience</strong></h2>
+    <i class="fa-solid fa-star"></i>
+    </div>
     <div class="experience"><strong>
             Product Designer
             2022-Present
@@ -102,8 +110,7 @@
                 <li>Present designs to key stakeholders</li>
                 <li>Refine designs based on user feedback</li>
             </ul>
-        </div>
-        <div><strong>
+    <strong>
             Marketing Analyst
             2019-2022
             </strong>
@@ -113,8 +120,7 @@
                 <li>Design customers satisfaction surveys and evaluate the results</li>
                 <li>Present findings to key stakeholders</li>
             </ul>
-        </div>
-        <div><strong>
+    <strong>
             Marketing Assistant
             2017-2019
             </strong>
@@ -126,8 +132,10 @@
             </ul>
         </div>
     </section>
-    <section id="section">
-        <h2><strong>Skills</strong></h2><i class="fa-solid fa-star"></i>
+    <div class="section">
+    </i><h2><strong>Skills</strong></h2>
+    <i class="fa-solid fa-star"></i>
+    </div>
      <div class="experience">
         <ul>
             <li>Adobe Animate</li>
