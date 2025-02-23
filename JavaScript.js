@@ -32,7 +32,7 @@ window.addEventListener('load',function () {
     const LargeFont = document.getElementById ('largefont');
 
     SmallFont.addEventListener ('click', function () {
-        const fontSize = changeFontSize (p, -3);
+        const fontSize = changeFontSize (p, -4);
         console.log (fontSize);
     });
 
