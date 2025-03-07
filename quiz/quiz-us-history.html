@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United States History Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz-us-history.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>United States History Quiz</h1>
+    <fieldset>
+    <li class="single-answer question">
+      <legend>Who was the first President of the United States?</legend>
+      <label> <input type="radio" data-correct= "true" name= "question1" value="George Washington">George Washington</label>
+      <label> <input type="radio" data-correct= "false" name= "question1" value="Thomas Jefferson">Thomas Jefferson</label>
+      <label> <input type="radio" data-correct= "false" name= "question1" value="Abraham Lincoln">Abraham Lincoln</label>
+      <label> <input type="radio" data-correct= "false" name= "question1" value="Benjamin Franklin">Benjamin Franklin</label>
+    </li>  
+    </fieldset>
+  </div>
+  <button id="submit-btn">Submit</button>
+  <div id="result"></div>
+</body>
+</html>
