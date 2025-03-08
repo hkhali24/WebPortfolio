@@ -11,6 +11,15 @@ body {
 /*
   Add additional styles here.
 */
+
+html {
+  background-color: beige;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 label {
   display: block;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -33,4 +42,13 @@ button {
   float:right;
   font-size:16pt;
   margin: 1rem;
+}
+
+fieldset {
+  margin:  auto;
+  padding: auto;
+  background-color: white;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
 }
