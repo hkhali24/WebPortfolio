@@ -25,10 +25,12 @@ function renderQuiz(quizData, container) {
  * Checks if all quiz questions have been answered.
  * @return {Boolean} True if all questions are answered, false otherwise.
  */
+
 function areAllQuestionsAnswered() {
   // ... Code to check if all questions are answered ...
   return false;
 }
+
 
 /**
  * Checks if the answer provided for a single-answer question is correct.
