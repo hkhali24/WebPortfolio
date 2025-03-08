@@ -11,3 +11,26 @@ body {
 /*
   Add additional styles here.
 */
+label {
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12pt;
+  margin: auto;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  display: fixed;
+  margin: .5rem;
+  width: auto;
+}
+
+fieldset legend {
+  font-size: 13pt;
+}
+
+button {
+  float:right;
+  font-size:16pt;
+  margin: 1rem;
+}
