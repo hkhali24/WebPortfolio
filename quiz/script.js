@@ -18,6 +18,9 @@ function renderQuiz(quizData, container) {
   // ... Code to render the quiz ...
 }
 
+const container= document.getElementById ('quiz-container');
+renderQuiz (quizData, container);
+
 /**
  * Checks if all quiz questions have been answered.
  * @return {Boolean} True if all questions are answered, false otherwise.
@@ -57,9 +60,10 @@ function isFreeFormAnswerCorrect(question) {
  * Submits the quiz, checks all answers, calculates the score, and displays it.
  * Alerts the user if not all questions have been answered.
  */
-function submitQuiz() {
+function submitQuiz(quizData, container) {
   // ... Code to submit the quiz and display the score ...
 }
+
 
 /**
  * Creates and returns a new score display element.
