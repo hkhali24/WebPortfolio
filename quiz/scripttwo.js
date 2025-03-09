@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
  * @param {Object} quizData - The data for the quiz including questions and answers.
  * @param {HTMLElement} container - The DOM element where the quiz will be rendered.
  */
-function renderQuiz(quizData, container) {
+
   // ... Code to render the quiz ...
+function renderQuiz(quizData, container) {
+  container.innerHTML = ''; 
 }
 
 /**
@@ -57,8 +59,13 @@ function isFreeFormAnswerCorrect(question) {
  * Submits the quiz, checks all answers, calculates the score, and displays it.
  * Alerts the user if not all questions have been answered.
  */
+
+// ... Code to submit the quiz and display the score ...
 function submitQuiz() {
-  // ... Code to submit the quiz and display the score ...
+  if (!areAllQuestionsAnswered ()) {
+    alert ('Please answer all questions.');
+    return;
+  }
 }
 
 /**
