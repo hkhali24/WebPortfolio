@@ -22,21 +22,25 @@ function renderQuiz(quizData, container) {
 
 window.addEventListener('load', function(e) {
   const form  = document.getElementById('quiz-form');
+
   const singleAnswerQuestion = form.singleAnswerQuestion;
   const multipleAnswerQuestion = form.multipleAnswerQuestion;
   const freeFormQuestion = form.freeFormQuestion;
 
-  singleAnswerQuestion.addEventListener('input', function(e) {
+  singleAnswerQuestion.addEventListener('click', function(e) {
     checkField(singleAnswerQuestion);
   });
 
-  multipleAnswerQuestion.addEventListener('input', function(e) {
+  multipleAnswerQuestion.addEventListener('click', function(e) {
     checkField(multipleAnswerQuestion);
   });
 
-  freeFormQuestion.addEventListener('input', function(e) {
+  freeFormQuestion.addEventListener('click', function(e) {
     checkField(freeFormQuestion);
   });
+
+});
+
 
 /**
  * Checks if all quiz questions have been answered.
@@ -77,9 +81,22 @@ function isFreeFormAnswerCorrect(question) {
  * Submits the quiz, checks all answers, calculates the score, and displays it.
  * Alerts the user if not all questions have been answered.
  */
+
+quiz.addEventListener ('submit', function (e)) {
+  checkField (singleAnswerQuestion);
+  checkField (multipleAnswerQuestion);
+  checkField (freeFormQuestion);
+}
+
+  if (!quiz.checkValidity()) {
+    e.preventDefault();
+    alert('Please fix errors.');
+  }
+
+
 function submitQuiz() {
   // ... Code to submit the quiz and display the score ...
-}
+} 
 
 /**
  * Creates and returns a new score display element.
