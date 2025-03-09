@@ -82,18 +82,6 @@ function isFreeFormAnswerCorrect(question) {
  * Alerts the user if not all questions have been answered.
  */
 
-quiz.addEventListener ('submit', function (e)) {
-  checkField (singleAnswerQuestion);
-  checkField (multipleAnswerQuestion);
-  checkField (freeFormQuestion);
-}
-
-  if (!quiz.checkValidity()) {
-    e.preventDefault();
-    alert('Please fix errors.');
-  }
-
-
 function submitQuiz() {
   // ... Code to submit the quiz and display the score ...
 } 
