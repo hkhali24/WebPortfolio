@@ -26,6 +26,7 @@ function renderQuiz(quizData, container) {
  */
 function areAllQuestionsAnswered() {
   // ... Code to check if all questions are answered ...
+  return false;
 }
 
 /**
@@ -35,6 +36,7 @@ function areAllQuestionsAnswered() {
  */
 function isSingleAnswerCorrect(question) {
   // ... Code to check single answer correctness ...
+  return false;
 }
 
 /**
@@ -44,6 +46,7 @@ function isSingleAnswerCorrect(question) {
  */
 function isMultipleAnswerCorrect(question) {
   // ... Code to check multiple answer correctness ...
+  return false;
 }
 
 /**
@@ -53,6 +56,7 @@ function isMultipleAnswerCorrect(question) {
  */
 function isFreeFormAnswerCorrect(question) {
   // ... Code to check free-form answer correctness ...
+  return false;
 }
 
 /**
@@ -60,17 +64,24 @@ function isFreeFormAnswerCorrect(question) {
  * Alerts the user if not all questions have been answered.
  */
 
-// ... Code to submit the quiz and display the score ...
-function submitQuiz() {
-  if (!areAllQuestionsAnswered ()) {
-    alert ('Please answer all questions.');
-    return;
-  }}
+if (!areAllQuestionsAnswered) {
+  alert('Please answer all questions.');
+  return;
+}
 
-  let score = 0;
-  const singleanswerquestion = document.querySelectorAll('.single-answer question');
-  const multipleanswerquestion = document.querySelectorAll('.multiple-answer question');
-  const freeformquestion = document.querySelectorAll('.free-form question');
+// ... Code to submit the quiz and display the score ...
+function submitQuiz(e) {
+  if (!form.checkValidity()) {
+    e.preventDefault ();
+
+    let areAllQuestionsAnswered = true;
+    let score = 0;
+
+  const singleAnswerQuestion = document.querySelectorAll('.single-answer');
+  const multipleAnswerQuestion = document.querySelectorAll('.multiple-answer');
+  const freeFormQuestion = document.querySelectorAll('.free-form');
+
+}}
 
 /**
  * Creates and returns a new score display element.
