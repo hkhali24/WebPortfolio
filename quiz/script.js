@@ -44,7 +44,6 @@ window.addEventListener('load', function(e) {
  */
 function areAllQuestionsAnswered() {
   // ... Code to check if all questions are answered ...
-  return false;
 }
 
 /**
@@ -54,7 +53,6 @@ function areAllQuestionsAnswered() {
  */
 function isSingleAnswerCorrect(question) {
   // ... Code to check single answer correctness ...
-  return false;
 }
 
 /**
@@ -64,7 +62,6 @@ function isSingleAnswerCorrect(question) {
  */
 function isMultipleAnswerCorrect(question) {
   // ... Code to check multiple answer correctness ...
-  return false;
 }
 
 /**
@@ -74,35 +71,15 @@ function isMultipleAnswerCorrect(question) {
  */
 function isFreeFormAnswerCorrect(question) {
   // ... Code to check free-form answer correctness ...
-  return false;
 }
 
 /**
  * Submits the quiz, checks all answers, calculates the score, and displays it.
  * Alerts the user if not all questions have been answered.
  */
-function checkQuestion(question) {
-  if (!question.checkValidity()) {
-    question.style.backgroundColor = 'pink';
-  } else {
-    question.style.backgroundColor = '';
-  }
+function submitQuiz() {
+  // ... Code to submit the quiz and display the score ...
 }
-
-
-// ... Code to submit the quiz and display the score ...
-function submitQuiz(e) {
-  if (!form.checkValidity()) {
-    e.preventDefault ();
-
-    let areAllQuestionsAnswered = true;
-    let score = 0;
-
-  const singleAnswerQuestion = document.querySelectorAll('.single-answer');
-  const multipleAnswerQuestion = document.querySelectorAll('.multiple-answer');
-  const freeFormQuestion = document.querySelectorAll('.free-form');
-
-}}
 
 /**
  * Creates and returns a new score display element.
