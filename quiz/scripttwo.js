@@ -65,8 +65,12 @@ function submitQuiz() {
   if (!areAllQuestionsAnswered ()) {
     alert ('Please answer all questions.');
     return;
-  }
-}
+  }}
+
+  let score = 0;
+  const singleanswerquestion = document.querySelectorAll('.single-answer question');
+  const multipleanswerquestion = document.querySelectorAll('.multiple-answer question');
+  const freeformquestion = document.querySelectorAll('.free-form question');
 
 /**
  * Creates and returns a new score display element.
