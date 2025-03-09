@@ -64,7 +64,6 @@ function submitQuiz(quizData, container) {
   // ... Code to submit the quiz and display the score ...
 }
 
-
 /**
  * Creates and returns a new score display element.
  * @return {HTMLElement} The created score display element.
