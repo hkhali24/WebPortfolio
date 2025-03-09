@@ -62,6 +62,8 @@ function isFreeFormAnswerCorrect(question) {
  */
 function submitQuiz(quizData, container) {
   // ... Code to submit the quiz and display the score ...
+  const selectedAnswers = [];
+  let score = 0;
 }
 
 /**
