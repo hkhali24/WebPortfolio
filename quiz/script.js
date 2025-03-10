@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
  * @param {Object} quizData - The data for the quiz including questions and answers.
  * @param {HTMLElement} container - The DOM element where the quiz will be rendered.
  */
-function renderQuiz(quizData, container) {
-  // ... Code to render the quiz ...
-}
 
+ // ... Code to render the quiz ...
+function renderQuiz(quizData, container) {
 const container= document.getElementById ('quiz-container');
 renderQuiz (quizData, container);
+}
 
 /**
  * Checks if all quiz questions have been answered.
