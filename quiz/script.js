@@ -25,8 +25,10 @@ renderQuiz (quizData, container);
  * Checks if all quiz questions have been answered.
  * @return {Boolean} True if all questions are answered, false otherwise.
  */
+
+ // ... Code to check if all questions are answered ...
 function areAllQuestionsAnswered() {
-  // ... Code to check if all questions are answered ...
+  return false;
 }
 
 /**
@@ -34,8 +36,10 @@ function areAllQuestionsAnswered() {
  * @param {HTMLElement} question - The DOM element representing the question.
  * @return {Boolean} True if the answer is correct, false otherwise.
  */
+
+// ... Code to check single answer correctness ...
 function isSingleAnswerCorrect(question) {
-  // ... Code to check single answer correctness ...
+  return false;
 }
 
 /**
@@ -43,8 +47,10 @@ function isSingleAnswerCorrect(question) {
  * @param {HTMLElement} question - The DOM element representing the question.
  * @return {Boolean} True if all correct answers are selected, false otherwise.
  */
-function isMultipleAnswerCorrect(question) {
+
   // ... Code to check multiple answer correctness ...
+function isMultipleAnswerCorrect(question) {
+  return false;
 }
 
 /**
@@ -52,8 +58,10 @@ function isMultipleAnswerCorrect(question) {
  * @param {HTMLElement} question - The DOM element representing the question.
  * @return {Boolean} True if the free-form answer is correct, false otherwise.
  */
+
+// ... Code to check free-form answer correctness ...
 function isFreeFormAnswerCorrect(question) {
-  // ... Code to check free-form answer correctness ...
+  return false;
 }
 
 /**
