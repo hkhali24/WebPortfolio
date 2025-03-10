@@ -72,9 +72,9 @@ function isFreeFormAnswerCorrect(question) {
 
 window.addEventListener ('load', function (e) {
   const form = document.getElementById ('quiz-form');
-  const singleAnswerQuestion = document.querySelectorAll('.single-answer');
-  const multipleAnswerQuestion = document.querySelectorAll('.multiple-answer');
-  const freeFormQuestion = document.querySelectorAll('.free-form');
+  const singleAnswerQuestion = form.singleAnswerQuestion;
+  const multipleAnswerQuestion = form.multipleAnswerQuestion;
+  const freeFormQuestion = form.freeFormQuestion;
 
 
   function checkField (field) {
