@@ -68,8 +68,15 @@ function isFreeFormAnswerCorrect(question) {
  * Submits the quiz, checks all answers, calculates the score, and displays it.
  * Alerts the user if not all questions have been answered.
  */
+
+// ... Code to submit the quiz and display the score ...
 function submitQuiz(quizData, container) {
-  // ... Code to submit the quiz and display the score ...
+  if (!submitBtn.checkValidity(quizData, container)) {
+    e.preventDefault();
+    alert ('Please fix errors.')
+  }
+
+
   const selectedAnswers = [];
   let score = 0;
 }
