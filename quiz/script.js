@@ -68,9 +68,14 @@ function isFreeFormAnswerCorrect(question) {
  * Submits the quiz, checks all answers, calculates the score, and displays it.
  * Alerts the user if not all questions have been answered.
  */
+
+
 window.addEventListener ('load', function (e) {
   const form = document.getElementById ('quiz-form');
-  const question1 = form.question1;
+  const singleAnswerQuestion = document.querySelectorAll('.single-answer');
+  const multipleAnswerQuestion = document.querySelectorAll('.multiple-answer');
+  const freeFormQuestion = document.querySelectorAll('.free-form');
+
 
   function checkField (field) {
     if (!field.checkValidity()) {
@@ -81,16 +86,47 @@ window.addEventListener ('load', function (e) {
   }
 
   form.addEventListener ('click', function(e) {
-    checkField (question1);
+    singleAnswerQuestion.forEach (function (question) {
+      checkField (question);
   });
 
-  form.addEventListener ('submit', function(e) {
-      checkField (question1);
+  multipleAnswerQuestion.forEach(function (question) {
+    checkField (question);
+  });
 
-  if (!form.checkValidity ()){
-    e.preventDefault ();
+  freeFormQuestion.forEach(function (question) {
+    checkField (question);
+  });
+});
+
+  form.addEventListener ('submit', function(e) {
+    let valid = 'true'
+
+  singleAnswerQuestion.forEach (function (question) {
+    if (!question.checkVisibility()) {
+      valid = "false";
+      checkField ('question')
+    }
+  });
+
+ multipleAnswerQuestion.forEach (function (question) {
+    if (!question.checkVisibility()) {
+      valid = "false";
+      checkField ('question')
+    }
+  });
+
+freeFormQuestion.forEach (function (question) {
+    if (!question.checkVisibility()) {
+      valid = "false";
+      checkField ('question')
+    }
+  });
+
+  if (!valid) {
+    e.preventDefault();
     alert ('Please fix errors.');
-   }
+  }
   });
 });
 
