@@ -69,17 +69,21 @@ function isFreeFormAnswerCorrect(question) {
  * Alerts the user if not all questions have been answered.
  */
 
-// ... Code to submit the quiz and display the score ...
-function submitQuiz(quizData, container) {
-  if (!submitBtn.checkValidity(quizData, container)) {
-    e.preventDefault();
-    alert ('Please fix errors.')
-  }
+const submitQuiz = document.getElementById ('quiz-form');
 
+submitBtn.addEventListener('click', function (e) {
+e.preventDefault();
 
-  const selectedAnswers = [];
-  let score = 0;
+checkField (quizContainer);
+
+if (!submitQuiz.checkValidity()) {
+  alert('Please answer all questions.');
+} else {
+  submitQuiz.submit();
 }
+});
+
+// ... Code to submit the quiz and display the score ...
 
 /**
  * Creates and returns a new score display element.
