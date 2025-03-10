@@ -103,27 +103,27 @@ window.addEventListener ('load', function (e) {
     let valid = 'true'
 
   singleAnswerQuestion.forEach (function (question) {
-    if (!question.checkVisibility()) {
+    if (!question.checkValidity()) {
       valid = "false";
       checkField ('question')
     }
   });
 
  multipleAnswerQuestion.forEach (function (question) {
-    if (!question.checkVisibility()) {
+    if (!question.checkValidity()) {
       valid = "false";
       checkField ('question')
     }
   });
 
 freeFormQuestion.forEach (function (question) {
-    if (!question.checkVisibility()) {
+    if (!question.checkValidity()) {
       valid = "false";
       checkField ('question')
     }
   });
 
-  if (!valid) {
+  if (!valid.checkValidity()) {
     e.preventDefault();
     alert ('Please fix errors.');
   }
