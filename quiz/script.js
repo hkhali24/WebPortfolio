@@ -15,18 +15,20 @@ document.addEventListener('DOMContentLoaded', function() {
  * @param {HTMLElement} container - The DOM element where the quiz will be rendered.
  */
 
-  // ... Code to render the quiz ...
+ // ... Code to render the quiz ...
 function renderQuiz(quizData, container) {
-  container.innerHTML = ''; 
+const container= document.getElementById ('quiz-container');
+renderQuiz (quizData, container);
 }
-
 
 /**
  * Checks if all quiz questions have been answered.
  * @return {Boolean} True if all questions are answered, false otherwise.
  */
+
+ // ... Code to check if all questions are answered ...
 function areAllQuestionsAnswered() {
-  // ... Code to check if all questions are answered ...
+  return false;
 }
 
 /**
@@ -34,8 +36,10 @@ function areAllQuestionsAnswered() {
  * @param {HTMLElement} question - The DOM element representing the question.
  * @return {Boolean} True if the answer is correct, false otherwise.
  */
+
+// ... Code to check single answer correctness ...
 function isSingleAnswerCorrect(question) {
-  // ... Code to check single answer correctness ...
+  return false;
 }
 
 /**
@@ -43,8 +47,10 @@ function isSingleAnswerCorrect(question) {
  * @param {HTMLElement} question - The DOM element representing the question.
  * @return {Boolean} True if all correct answers are selected, false otherwise.
  */
-function isMultipleAnswerCorrect(question) {
+
   // ... Code to check multiple answer correctness ...
+function isMultipleAnswerCorrect(question) {
+  return false;
 }
 
 /**
@@ -52,29 +58,43 @@ function isMultipleAnswerCorrect(question) {
  * @param {HTMLElement} question - The DOM element representing the question.
  * @return {Boolean} True if the free-form answer is correct, false otherwise.
  */
+
+// ... Code to check free-form answer correctness ...
 function isFreeFormAnswerCorrect(question) {
-  // ... Code to check free-form answer correctness ...
+  return false;
 }
 
 /**
  * Submits the quiz, checks all answers, calculates the score, and displays it.
  * Alerts the user if not all questions have been answered.
  */
+window.addEventListener ('load', function (e) {
+  const form = document.getElementById ('quiz-form');
+  const question1 = form.question1;
 
+  function checkField (field) {
+    if (!field.checkValidity()) {
+      field.style.backgroundColor = 'pink'
+    } else {
+      field.style.backgroundColor = '';
+    }
+  }
 
-  // ... Code to submit the quiz and display the score ...
-function submitQuiz(e) {
-  if (!form.checkValidity()) {
+  form.addEventListener ('click', function(e) {
+    checkField (question1);
+  });
+
+  form.addEventListener ('submit', function(e) {
+      checkField (question1);
+
+  if (!form.checkValidity ()){
     e.preventDefault ();
+    alert ('Please fix errors.');
+   }
+  });
+});
 
-    let areAllQuestionsAnswered = true;
-    let score = 0;
-
-  const singleAnswerQuestion = document.querySelectorAll('.single-answer');
-  const multipleAnswerQuestion = document.querySelectorAll('.multiple-answer');
-  const freeFormQuestion = document.querySelectorAll('.free-form');
-
-}}
+// ... Code to submit the quiz and display the score ...
 
 /**
  * Creates and returns a new score display element.
