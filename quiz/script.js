@@ -69,6 +69,15 @@ function isFreeFormAnswerCorrect(question) {
  * Alerts the user if not all questions have been answered.
  */
 
+function checkValidity (field) {
+  if (!field.checkValidity ()) {
+    field.style.backgroundColor = 'pink';
+  }
+  else {
+    field.style.backgroundColor = '';
+  }
+}
+
 window.addEventListener ('load', function (e) {
   const form = document.getElementById ('quiz-form');
   const singleAnswerQuestion = form.singleAnswerQuestion;
@@ -104,7 +113,6 @@ if (!form.checkValidity ()) {
 });
 
 });
-
 
 
 // ... Code to submit the quiz and display the score ...
