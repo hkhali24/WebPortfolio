@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 
  // ... Code to render the quiz ...
-function renderQuiz(quizData, container) {
-const container= document.getElementById ('quiz-container');
-renderQuiz (quizData, container);
-}
+ function renderQuiz(quizData, container) {
+  const container= document.getElementById ('quiz-container');
+  renderQuiz (quizData, container);
+  }
 
 /**
  * Checks if all quiz questions have been answered.
@@ -69,66 +69,45 @@ function isFreeFormAnswerCorrect(question) {
  * Alerts the user if not all questions have been answered.
  */
 
-
 window.addEventListener ('load', function (e) {
   const form = document.getElementById ('quiz-form');
   const singleAnswerQuestion = form.singleAnswerQuestion;
   const multipleAnswerQuestion = form.multipleAnswerQuestion;
   const freeFormQuestion = form.freeFormQuestion;
 
+  singleAnswerQuestion.addEventListener ('click', function (e) {
+    checkField (singleAnswerQuestion);
 
-  function checkField (field) {
-    if (!field.checkValidity()) {
-      field.style.backgroundColor = 'pink'
-    } else {
-      field.style.backgroundColor = '';
-    }
-  }
+  multipleAnswerQuestion.addEventListener ('click', function (e) {
+      checkField (multipleAnswerQuestion);
 
-  form.addEventListener ('click', function(e) {
-    singleAnswerQuestion.forEach (function (question) {
-      checkField (question);
-  });
-
-  multipleAnswerQuestion.forEach(function (question) {
-    checkField (question);
-  });
-
-  freeFormQuestion.forEach(function (question) {
-    checkField (question);
-  });
+  freeFormQuestion.addEventListener ('click', function (e) {
+        checkField (freeFormQuestion);
 });
 
-  form.addEventListener ('submit', function(e) {
-    let valid = 'true'
-
-  singleAnswerQuestion.forEach (function (question) {
-    if (!question.checkValidity()) {
-      valid = "false";
-      checkField ('question')
-    }
-  });
-
- multipleAnswerQuestion.forEach (function (question) {
-    if (!question.checkValidity()) {
-      valid = "false";
-      checkField ('question')
-    }
-  });
-
-freeFormQuestion.forEach (function (question) {
-    if (!question.checkValidity()) {
-      valid = "false";
-      checkField ('question')
-    }
-  });
-
-  if (!valid.checkValidity()) {
-    e.preventDefault();
-    alert ('Please fix errors.');
-  }
-  });
 });
+
+});
+
+form.addEventListener ("submit", function (e) {
+  checkField (singleAnswerQuestion, multipleAnswerQuestion, freeFormQuestion);
+
+if (!form.checkValidity ()) {
+  e.preventDefault ();
+  alert ('Please fix errors.')
+}
+
+});
+
+});
+
+
+
+
+
+
+
+
 
 // ... Code to submit the quiz and display the score ...
 
