@@ -76,25 +76,25 @@ window.addEventListener ('load', function (e) {
   const freeFormQuestion = form.freeFormQuestion;
 
   singleAnswerQuestion.addEventListener ('click', function (e) {
-    checkField (singleAnswerQuestion);
+    checkValidity (singleAnswerQuestion);
 
   });
 
   multipleAnswerQuestion.addEventListener ('click', function (e) {
-      checkField (multipleAnswerQuestion);
+      checkValidity (multipleAnswerQuestion);
 
  });
 
   freeFormQuestion.addEventListener ('click', function (e) {
-        checkField (freeFormQuestion);
+        checkValidity (freeFormQuestion);
 
 });
 
 
 form.addEventListener ("submit", function (e) {
-  checkField (singleAnswerQuestion);
-  checkField (multipleAnswerQuestion);
-  checkField (freeFormQuestion);
+  checkValidity (singleAnswerQuestion);
+  checkValidity (multipleAnswerQuestion);
+  checkValidity (freeFormQuestion);
 
 if (!form.checkValidity ()) {
   e.preventDefault ();
