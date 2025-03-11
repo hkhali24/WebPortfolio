@@ -78,19 +78,23 @@ window.addEventListener ('load', function (e) {
   singleAnswerQuestion.addEventListener ('click', function (e) {
     checkField (singleAnswerQuestion);
 
+  });
+
   multipleAnswerQuestion.addEventListener ('click', function (e) {
       checkField (multipleAnswerQuestion);
 
+ });
+
   freeFormQuestion.addEventListener ('click', function (e) {
         checkField (freeFormQuestion);
-});
 
 });
 
-});
 
 form.addEventListener ("submit", function (e) {
-  checkField (singleAnswerQuestion, multipleAnswerQuestion, freeFormQuestion);
+  checkField (singleAnswerQuestion);
+  checkField (multipleAnswerQuestion);
+  checkField (freeFormQuestion);
 
 if (!form.checkValidity ()) {
   e.preventDefault ();
@@ -100,12 +104,6 @@ if (!form.checkValidity ()) {
 });
 
 });
-
-
-
-
-
-
 
 
 
