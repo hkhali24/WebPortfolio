@@ -74,7 +74,7 @@ function checkValidity (field) {
     field.style.backgroundColor = 'pink';
   }
   else {
-    field.style.backgroundColor = '';
+    field.style.backgroundColor = ('');
   }
 }
 
