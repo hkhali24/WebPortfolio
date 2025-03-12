@@ -80,12 +80,23 @@ function checkValidity (field) {
 
 window.addEventListener ('load', function (e) {
   const form = document.getElementById ('quiz-form');
-  const singleAnswerQuestion = form.singleAnswerQuestion;
-  const multipleAnswerQuestion = form.multipleAnswerQuestion;
-  const freeFormQuestion = form.freeFormQuestion;
+  const question1 = form.querySelector.question1
+  const question2 = form.querySelector.question2
+  const question3 = form.querySelector.question3
+  const question4 = form.querySelector.question4
+  const question5 = form.querySelector.question5
+  const question6 = form.querySelector.question6
+  const question7 = form.querySelector.question7
+  const question8 = form.querySelector.question8
+  const question9 = form.querySelector.question9
+  const question10 = form.querySelector.question10
+  const question11 = form.querySelector.question11
+  const question12 = form.querySelector.question12
+  
 
-  singleAnswerQuestion.addEventListener ('click', function (e) {
-    checkValidity (singleAnswerQuestion);
+
+  question1.addEventListener ('click', function (e) {
+    checkValidity (question1);
 
   });
 
@@ -101,9 +112,20 @@ window.addEventListener ('load', function (e) {
 
 
 form.addEventListener ("submit", function (e) {
-  checkValidity (singleAnswerQuestion);
-  checkValidity (multipleAnswerQuestion);
-  checkValidity (freeFormQuestion);
+  checkValidity (question1);
+  checkValidity (question2);
+  checkValidity (question3);
+  checkValidity (question4);
+  checkValidity (question5);
+  checkValidity (question6);
+  checkValidity (question7);
+  checkValidity (question8);
+  checkValidity (question9);
+  checkValidity (question10);
+  checkValidity (question11);
+  checkValidity (question12);
+
+
 
 if (!form.checkValidity ()) {
   e.preventDefault ();
