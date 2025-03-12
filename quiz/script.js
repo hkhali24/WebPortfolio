@@ -17,8 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
  // ... Code to render the quiz ...
  function renderQuiz(quizData, container) {
-  const container= document.getElementById ('quiz-container');
+  const ul = document.createElement ('ul');
+
+  quizData.forEach ((questionData, index) => {
+    const li = document.createElement ('li');
+    li.classList.add ('question');
   }
+  )}
+
 
 /**
  * Checks if all quiz questions have been answered.
