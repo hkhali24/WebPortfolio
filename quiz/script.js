@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
  // ... Code to render the quiz ...
  function renderQuiz(quizData, container) {
   const container= document.getElementById ('quiz-container');
-  renderQuiz (quizData, container);
   }
 
 /**
@@ -100,15 +99,62 @@ window.addEventListener ('load', function (e) {
 
   });
 
-  multipleAnswerQuestion.addEventListener ('click', function (e) {
-      checkValidity (multipleAnswerQuestion);
+  question2.addEventListener ('click', function (e) {
+      checkValidity (question2);
 
  });
 
-  freeFormQuestion.addEventListener ('click', function (e) {
-        checkValidity (freeFormQuestion);
+ question3.addEventListener ('click', function (e) {
+        checkValidity (question3);
 
 });
+
+question4.addEventListener ('click', function (e) {
+  checkValidity (question4);
+
+});
+
+question5.addEventListener ('click', function (e) {
+  checkValidity (question5);
+
+});
+
+question6.addEventListener ('click', function (e) {
+  checkValidity (question);
+
+});
+
+question7.addEventListener ('click', function (e) {
+  checkValidity (question7);
+
+});
+
+question8.addEventListener ('click', function (e) {
+  checkValidity (question8);
+
+});
+
+question9.addEventListener ('click', function (e) {
+  checkValidity (question9);
+
+});
+
+question10.addEventListener ('click', function (e) {
+  checkValidity (question10);
+
+});
+
+question11.addEventListener ('click', function (e) {
+  checkValidity (question11);
+
+});
+
+question12.addEventListener ('click', function (e) {
+  checkValidity (question12);
+
+});
+
+
 
 
 form.addEventListener ("submit", function (e) {
