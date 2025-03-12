@@ -68,13 +68,12 @@ function isFreeFormAnswerCorrect(question) {
  * Alerts the user if not all questions have been answered.
  */
 
-function checkValidity (field) {
-  if (!field.checkValidity ()) {
-    field.style.backgroundColor = 'pink';
+function submitQuiz(quizContainer) {
+  if (field.previousElementSibling &&
+    field.previousElementSibling.className === 'error') {
+    return;
   }
-  else {
-    field.style.backgroundColor = ('');
-  }
+
 }
 
 window.addEventListener ('load', function (e) {
@@ -93,89 +92,94 @@ window.addEventListener ('load', function (e) {
   const question12 = form.querySelector.question12
   
 
+  for (radio of form.question1) {
+    radio.addEventListener("click", function(e) {
+      checkField(question1);
+    });
+  }
 
-  question1.addEventListener ('click', function (e) {
-    checkValidity (question1);
+  for (radio of form.question2) {
+    radio.addEventListener("click", function(e) {
+      checkField(question2);
+    });
+  }
 
+  for (radio of form.question3) {
+    radio.addEventListener("click", function(e) {
+      checkField(question3);
+    });
+  }
+
+  for (radio of form.question4) {
+    radio.addEventListener("click", function(e) {
+      checkField(question4);
+    });
+
+  }
+  for (radio of form.question5) {
+    radio.addEventListener("click", function(e) {
+      checkField(question5);
+    });
+  }
+
+  for (radio of form.question6) {
+    radio.addEventListener("click", function(e) {
+      checkField(question6);
+    });
+  }
+
+  for (radio of form.question7) {
+    radio.addEventListener("click", function(e) {
+      checkField(question7);
+    });
+  }
+
+  for (radio of form.question8) {
+    radio.addEventListener("click", function(e) {
+      checkField(question8);
+    });
+  }
+
+for (radio of form.question9) {
+  radio.addEventListener("click", function(e) {
+    checkField(question9);
   });
+}
 
-  question2.addEventListener ('click', function (e) {
-      checkValidity (question2);
 
- });
-
- question3.addEventListener ('click', function (e) {
-        checkValidity (question3);
+question10.addEventListener("input", function(e) {
+  checkField (question10);
 
 });
 
-question4.addEventListener ('click', function (e) {
-  checkValidity (question4);
+question11.addEventListener("input", function(e) {
+  checkField (question11);
 
 });
 
-question5.addEventListener ('click', function (e) {
-  checkValidity (question5);
-
-});
-
-question6.addEventListener ('click', function (e) {
-  checkValidity (question);
-
-});
-
-question7.addEventListener ('click', function (e) {
-  checkValidity (question7);
-
-});
-
-question8.addEventListener ('click', function (e) {
-  checkValidity (question8);
-
-});
-
-question9.addEventListener ('click', function (e) {
-  checkValidity (question9);
-
-});
-
-question10.addEventListener ('click', function (e) {
-  checkValidity (question10);
-
-});
-
-question11.addEventListener ('click', function (e) {
-  checkValidity (question11);
-
-});
-
-question12.addEventListener ('click', function (e) {
-  checkValidity (question12);
-
+question12.addEventListener("input", function(e) {
+  checkField(question12);
 });
 
 
+container.addEventListener ("submit", function (e) {
+  checkField (question1);
+  checkField (question2);
+  checkField (question3);
+  checkField (question4);
+  checkField (question5);
+  checkField (question6);
+  checkField (question7);
+  checkField (question8);
+  checkField (question9);
+  checkField (question10);
+  checkField (question11);
+  checkField (question12);
 
 
-form.addEventListener ("submit", function (e) {
-  checkValidity (question1);
-  checkValidity (question2);
-  checkValidity (question3);
-  checkValidity (question4);
-  checkValidity (question5);
-  checkValidity (question6);
-  checkValidity (question7);
-  checkValidity (question8);
-  checkValidity (question9);
-  checkValidity (question10);
-  checkValidity (question11);
-  checkValidity (question12);
-
-
-
-if (!form.checkValidity ()) {
-  e.preventDefault ();
-  alert ('Please fix errors.')
+  if (quizContainer.checkValidity ()) {
+    e.preventDefault ();
+    alert ('Please fix errors.');
 }
 
 });
