@@ -78,7 +78,7 @@ function submitQuiz(quizContainer) {
 }
 
 window.addEventListener ('load', function (e) {
-  const form = document.getElementById ('quiz-form');
+  const form = document.getElementById ('quiz');
   const question1 = form.querySelector.question1
   const question2 = form.querySelector.question2
   const question3 = form.querySelector.question3
@@ -178,7 +178,7 @@ form.addEventListener ("submit", function (e) {
   quizData (question12);
 
 
-  if (form.checkValidity ()) {
+  if (!form.checkValidity()) {
     e.preventDefault ();
     alert ('Please fix errors.');
 }
