@@ -16,14 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 
  // ... Code to render the quiz ...
- function renderQuiz(quizData, container) {
-  const ul = document.createElement ('ul');
-
-  quizData.forEach ((questionData, index) => {
-    const li = document.createElement ('li');
-    li.classList.add ('question');
-  }
-  )}
+ function renderQuiz( container) {
+  const form  = document.getElementById('quiz');
+ }
 
 
 /**
@@ -168,22 +163,22 @@ question12.addEventListener("input", function(e) {
 });
 
 
-container.addEventListener ("submit", function (e) {
-  checkField (question1);
-  checkField (question2);
-  checkField (question3);
-  checkField (question4);
-  checkField (question5);
-  checkField (question6);
-  checkField (question7);
-  checkField (question8);
-  checkField (question9);
-  checkField (question10);
-  checkField (question11);
-  checkField (question12);
+form.addEventListener ("submit", function (e) {
+  quizData (question1);
+  quizData (question2);
+  quizData (question3);
+  quizData (question4);
+  quizData (question5);
+  quizData (question6);
+  quizData (question7);
+  quizData (question8);
+  quizData (question9);
+  quizData (question10);
+  quizData (question11);
+  quizData (question12);
 
 
-  if (quizContainer.checkValidity ()) {
+  if (form.checkValidity ()) {
     e.preventDefault ();
     alert ('Please fix errors.');
 }
