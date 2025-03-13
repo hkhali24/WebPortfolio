@@ -34,10 +34,6 @@ input[type='checkbox'] {
   width: auto;
 }
 
-fieldset legend {
-  font-size: 13pt;
-}
-
 button {
   float:right;
   font-size:16pt;
@@ -51,5 +47,7 @@ fieldset {
   display: block;
   box-sizing: border-box;
   overflow: hidden;
+  font-size: 13pt;
+  line-height: 1.8rem;
 }
 
