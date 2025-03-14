@@ -75,9 +75,7 @@ function submitQuiz(quizContainer) {
     return;
   }
 
-}
-
-window.addEventListener ('load', function (e) {
+}window.addEventListener ('load', function (e) {
   const form = document.getElementById ('quiz');
   const question1 = form.querySelector.question1
   const question2 = form.querySelector.question2
@@ -92,7 +90,6 @@ window.addEventListener ('load', function (e) {
   const question11 = form.querySelector.question11
   const question12 = form.querySelector.question12
   
-
   for (radio of form.question1) {
     radio.addEventListener("click", function(e) {
       checkField(question1);
@@ -164,18 +161,18 @@ question12.addEventListener("input", function(e) {
 
 
 form.addEventListener ("submit", function (e) {
-  quizData (question1);
-  quizData (question2);
-  quizData (question3);
-  quizData (question4);
-  quizData (question5);
-  quizData (question6);
-  quizData (question7);
-  quizData (question8);
-  quizData (question9);
-  quizData (question10);
-  quizData (question11);
-  quizData (question12);
+  quizContainer (question1);
+  quizContainer (question2);
+  quizContainer (question3);
+  quizContainer (question4);
+  quizContainer (question5);
+  quizContainer (question6);
+  quizContainer (question7);
+  quizContainer (question8);
+  quizContainer (question9);
+  quizContainer (question10);
+  quizContainer(question11);
+  quizContainer (question12);
 
 
   if (!form.checkValidity()) {
@@ -196,4 +193,5 @@ form.addEventListener ("submit", function (e) {
  */
 function createScoreDisplay() {
   // ... Code to create a score display element ...
+
 }
