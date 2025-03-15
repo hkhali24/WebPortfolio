@@ -41,6 +41,8 @@ function isSingleAnswerCorrect(question) {
   return false;
 }
 
+
+
 /**
  * Checks if the answers provided for a multiple-answer question are correct.
  * @param {HTMLElement} question - The DOM element representing the question.
@@ -70,8 +72,12 @@ function isFreeFormAnswerCorrect(question) {
  * Submits the quiz, checks all answers, calculates the score, and displays it.
  * Alerts the user if not all questions have been answered.
  */
-
-
+function addError(field) {
+  if (field.previousElementSibling &&
+    field.previousElementSibling.className === 'error') {
+    return;
+  }
+}
 
 
 function checkField(Field) {
