@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const form  = document.getElementById('quiz');
  }
 
-
 /**
  * Checks if all quiz questions have been answered.
  * @return {Boolean} True if all questions are answered, false otherwise.
@@ -99,71 +98,71 @@ window.addEventListener ('load', function (e) {
   const question12 = form.question12
   
   for (radio of form.question1) {
-    radio.addEventListener("click", function(e) {
+    radio.addEventListener('click', function(e) {
       checkField(question1);
     });
   }
 
   for (radio of form.question2) {
-    radio.addEventListener("click", function(e) {
+    radio.addEventListener('click', function(e) {
       checkField(question2);
     });
   }
 
   for (radio of form.question3) {
-    radio.addEventListener("click", function(e) {
+    radio.addEventListener('click', function(e) {
       checkField(question3);
     });
   }
 
   for (radio of form.question4) {
-    radio.addEventListener("click", function(e) {
+    radio.addEventListener('click', function(e) {
       checkField(question4);
     });
 
   }
   for (radio of form.question5) {
-    radio.addEventListener("click", function(e) {
+    radio.addEventListener('click', function(e) {
       checkField(question5);
     });
   }
 
   for (radio of form.question6) {
-    radio.addEventListener("click", function(e) {
+    radio.addEventListener('click', function(e) {
       checkField(question6);
     });
   }
 
   for (radio of form.question7) {
-    radio.addEventListener("click", function(e) {
+    radio.addEventListener('click', function(e) {
       checkField(question7);
     });
   }
 
   for (radio of form.question8) {
-    radio.addEventListener("click", function(e) {
+    radio.addEventListener('click', function(e) {
       checkField(question8);
     });
   }
 
 for (radio of form.question9) {
-  radio.addEventListener("click", function(e) {
+  radio.addEventListener('click', function(e) {
     checkField(question9);
   });
 }
 
 
-question10.addEventListener("input", function(e) {
+question10.addEventListener('input', function(e) {
   checkField(question10);
 
 });
 
-question11.addEventListener("input", function(e) {
+question11.addEventListener('input', function(e) {
   checkField(question11);
 
 });
 
-question12.addEventListener("input", function(e) {
+question12.addEventListener('input', function(e) {
   checkField(question12);
 });
 
