@@ -167,7 +167,7 @@ question12.addEventListener('input', function(e) {
 });
 
 
-form.addEventListener ('submit', function (e) {
+form.addEventListener('submit', function (e) {
   checkField(question1);
   checkField(question2);
   checkField(question3);
