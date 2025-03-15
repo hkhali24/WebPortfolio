@@ -183,8 +183,8 @@ form.addEventListener ('submit', function (e) {
 
 
   if (!form.checkValidity()) {
-    e.preventDefault ();
-    alert ('Please fix errors.');
+    e.preventDefault();
+    alert('Please fix errors.');
 }
 
 });
