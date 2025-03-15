@@ -64,31 +64,39 @@ function isFreeFormAnswerCorrect(question) {
   return false;
 }
 
+
+
+
 /**
  * Submits the quiz, checks all answers, calculates the score, and displays it.
  * Alerts the user if not all questions have been answered.
  */
 
-function submitQuiz(quizContainer) {
-  if (field.previousElementSibling &&
-    field.previousElementSibling.className === 'error') {
-    return;
-  }
 
-}window.addEventListener ('load', function (e) {
+
+
+function checkField(Field) {
+  if (!field.checkValidity()) {
+    field.style.backgroundColor = 'pink';
+  } else {
+    field.style.backgroundColor = '';
+  }
+}
+
+window.addEventListener ('load', function (e) {
   const form = document.getElementById ('quiz');
-  const question1 = form.querySelector.question1
-  const question2 = form.querySelector.question2
-  const question3 = form.querySelector.question3
-  const question4 = form.querySelector.question4
-  const question5 = form.querySelector.question5
-  const question6 = form.querySelector.question6
-  const question7 = form.querySelector.question7
-  const question8 = form.querySelector.question8
-  const question9 = form.querySelector.question9
-  const question10 = form.querySelector.question10
-  const question11 = form.querySelector.question11
-  const question12 = form.querySelector.question12
+  const question1 = form.question1
+  const question2 = form.question2
+  const question3 = form.question3
+  const question4 = form.question4
+  const question5 = form.question5
+  const question6 = form.question6
+  const question7 = form.question7
+  const question8 = form.question8
+  const question9 = form.question9
+  const question10 = form.question10
+  const question11 = form.question11
+  const question12 = form.question12
   
   for (radio of form.question1) {
     radio.addEventListener("click", function(e) {
@@ -146,12 +154,12 @@ for (radio of form.question9) {
 
 
 question10.addEventListener("input", function(e) {
-  checkField (question10);
+  checkField(question10);
 
 });
 
 question11.addEventListener("input", function(e) {
-  checkField (question11);
+  checkField(question11);
 
 });
 
@@ -160,19 +168,19 @@ question12.addEventListener("input", function(e) {
 });
 
 
-form.addEventListener ("submit", function (e) {
-  quizContainer (question1);
-  quizContainer (question2);
-  quizContainer (question3);
-  quizContainer (question4);
-  quizContainer (question5);
-  quizContainer (question6);
-  quizContainer (question7);
-  quizContainer (question8);
-  quizContainer (question9);
-  quizContainer (question10);
-  quizContainer(question11);
-  quizContainer (question12);
+form.addEventListener ('submit', function (e) {
+  checkField(question1);
+  checkField(question2);
+  checkField(question3);
+  checkField(question4);
+  checkField(question5);
+  checkField(question6);
+  checkField(question7);
+  checkField(question8);
+  checkField(question9);
+  checkField(question10);
+  checkField(question11);
+  checkField(question12);
 
 
   if (!form.checkValidity()) {
