@@ -19,3 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
  function renderQuiz(quizData, quizContainer) {
   const form  = document.getElementById('quiz');
  }
+
+ /**
+ * Checks if all quiz questions have been answered.
+ * @return {Boolean} True if all questions are answered, false otherwise.
+ */
+
+ // ... Code to check if all questions are answered ...
+function areAllQuestionsAnswered() {
+    return false;
+  }
