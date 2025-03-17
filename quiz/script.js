@@ -65,7 +65,8 @@ function isFreeFormAnswerCorrect(question) {
   return false;
 }
 
-
+const answer = form.answer [0];
+answer.dataset.errorMsg = 'Please answer question.';
 
 
 /**
