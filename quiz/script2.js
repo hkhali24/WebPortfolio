@@ -64,14 +64,13 @@ document.addEventListener('DOMContentLoaded', function() {
   function isFreeFormAnswerCorrect(question) {
     return false;
   }
-  
+ 
   
   
   /**
    * Submits the quiz, checks all answers, calculates the score, and displays it.
    * Alerts the user if not all questions have been answered.
    */
-  
 
   
   // ... Code to submit the quiz and display the score ...
