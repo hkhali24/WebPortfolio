@@ -83,8 +83,64 @@ document.addEventListener('DOMContentLoaded', function() {
     // ... Code to create a score display element ...
   
   }
+
+  function submitQuiz (quiz) {
+    if (!quiz.checkValidity ()) {
+     quiz.style.backgroundColor = 'pink';
+    } else {
+      quiz.style.backgroundColor = '';
+    }
+    }
   
-  if (!form.checkValidity ()) {
-    e.preventDefault();
-    alert('Please fix errors');
-  }
+  window.addEventListener ('load', function (e) {
+    const form = document.getElementById ('quiz');
+    const question1 = form.question1;
+    const question2 = form.question2;
+    const question3 = form.question3;
+    const question4 = form.question4;
+    const question5 = form.question5;
+
+    for (radio of form.question1) {
+      radio.addEventListener('click', function(e) {
+        checkquiz(question1);
+      });
+    }
+
+    for (radio of form.question2) {
+      radio.addEventListener('click', function(e) {
+        checkquiz(question2);
+      });
+    }
+
+    for (radio of form.question3) {
+      radio.addEventListener('click', function(e) {
+        checkquiz(question3);
+      });
+    }
+
+    for (radio of form.question4) {
+      radio.addEventListener('click', function(e) {
+        checkquiz(question4);
+      });
+    }
+
+    question5.addEventListener('input', function(e) {
+      checkquiz(question5);
+    });
+
+    form.addEventListener('submit', function (e) {
+      checkquiz(question1);
+      checkquiz(question2);
+      checkquiz(question3);
+      checkquiz(question4);
+      checkquiz(question5);
+
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        alert('Please fix errors.');
+    }
+    
+    });
+    
+    });
+    

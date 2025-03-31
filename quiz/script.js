@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 
  // ... Code to render the quiz ...
- function renderQuiz(quizData, quizContainer) {
+ function renderQuiz(quizData) {
   const form  = document.getElementById('quiz');
  }
 
@@ -74,113 +74,112 @@ answer.dataset.errorMsg = 'Please answer question.';
  * Alerts the user if not all questions have been answered.
  */
 
-
-function checkField(Field) {
-  if (!field.checkValidity()) {
-    field.style.backgroundColor = 'pink';
+function submitQuiz (quiz) {
+  if (!quiz.checkValidity ()) {
+   quiz.style.backgroundColor = 'pink';
   } else {
-    field.style.backgroundColor = '';
+    quiz.style.backgroundColor = '';
   }
-}
+  }
 
 window.addEventListener ('load', function (e) {
   const form = document.getElementById ('quiz');
-  const question1 = form.question1
-  const question2 = form.question2
-  const question3 = form.question3
-  const question4 = form.question4
-  const question5 = form.question5
-  const question6 = form.question6
-  const question7 = form.question7
-  const question8 = form.question8
-  const question9 = form.question9
-  const question10 = form.question10
-  const question11 = form.question11
-  const question12 = form.question12
+  const question1 = form.question1;
+  const question2 = form.question2;
+  const question3 = form.question3;
+  const question4 = form.question4;
+  const question5 = form.question5;
+  const question6 = form.question6;
+  const question7 = form.question7;
+  const question8 = form.question8;
+  const question9 = form.question9;
+  const question10 = form.question10;
+  const question11 = form.question11;
+  const question12 = form.question12;
   
   for (radio of form.question1) {
     radio.addEventListener('click', function(e) {
-      checkField(question1);
+      checkquiz(question1);
     });
   }
 
   for (radio of form.question2) {
     radio.addEventListener('click', function(e) {
-      checkField(question2);
+      checkquiz(question2);
     });
   }
 
   for (radio of form.question3) {
     radio.addEventListener('click', function(e) {
-      checkField(question3);
+      checkquiz(question3);
     });
   }
 
   for (radio of form.question4) {
     radio.addEventListener('click', function(e) {
-      checkField(question4);
+      checkquiz(question4);
     });
 
   }
   for (radio of form.question5) {
     radio.addEventListener('click', function(e) {
-      checkField(question5);
+      checkquiz(question5);
     });
   }
 
   for (radio of form.question6) {
     radio.addEventListener('click', function(e) {
-      checkField(question6);
+      checkquiz(question6);
     });
   }
 
   for (radio of form.question7) {
     radio.addEventListener('click', function(e) {
-      checkField(question7);
+      checkquiz(question7);
     });
   }
 
   for (radio of form.question8) {
     radio.addEventListener('click', function(e) {
-      checkField(question8);
+      checkquiz(question8);
     });
   }
 
 for (radio of form.question9) {
   radio.addEventListener('click', function(e) {
-    checkField(question9);
+    checkquiz(question9);
   });
 }
 
 
 question10.addEventListener('input', function(e) {
-  checkField(question10);
+  checkquiz(question10);
 
 });
 
 question11.addEventListener('input', function(e) {
-  checkField(question11);
+  checkquiz(question11);
 
 });
 
 question12.addEventListener('input', function(e) {
-  checkField(question12);
+  checkquiz(question12);
 });
 
 
 form.addEventListener('submit', function (e) {
-  checkField(question1);
-  checkField(question2);
-  checkField(question3);
-  checkField(question4);
-  checkField(question5);
-  checkField(question6);
-  checkField(question7);
-  checkField(question8);
-  checkField(question9);
-  checkField(question10);
-  checkField(question11);
-  checkField(question12);
+  checkquiz(question1);
+  checkquiz(question2);
+  checkquiz(question3);
+  checkquiz(question4);
+  checkquiz(question5);
+  checkquiz(question6);
+  checkquiz(question7);
+  checkquiz(question8);
+  checkquiz(question9);
+  checkquiz(question10);
+  checkquiz(question11);
+  checkquiz(question12);
 
 
   if (!form.checkValidity()) {
