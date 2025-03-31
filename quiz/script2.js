@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
  
   
-  
+
   /**
    * Submits the quiz, checks all answers, calculates the score, and displays it.
    * Alerts the user if not all questions have been answered.
@@ -84,3 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   }
   
+  if (!form.checkValidity ()) {
+    e.preventDefault();
+    alert('Please fix errors');
+  }
