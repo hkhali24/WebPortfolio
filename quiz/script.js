@@ -63,7 +63,7 @@ function submitQuiz(e) {
   // ... Code to submit the quiz and display the score ...
   const form = document.getElementById('quiz');
   if(!areAllQuestionsAnswered ()) {
-    alert('Please answer all questions.');
+    alert('You must answer all questions before submitting.');
     e.preventDefault();
     return;
   }
