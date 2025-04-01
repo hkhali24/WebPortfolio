@@ -26,6 +26,7 @@ function renderQuiz(quizData, container) {
  */
 function areAllQuestionsAnswered() {
   // ... Code to check if all questions are answered ...
+  return false;
 }
 
 /**
@@ -35,6 +36,7 @@ function areAllQuestionsAnswered() {
  */
 function isSingleAnswerCorrect(question) {
   // ... Code to check single answer correctness ...
+  return false;
 }
 
 /**
@@ -44,6 +46,7 @@ function isSingleAnswerCorrect(question) {
  */
 function isMultipleAnswerCorrect(question) {
   // ... Code to check multiple answer correctness ...
+  return false;
 }
 
 /**
@@ -53,6 +56,7 @@ function isMultipleAnswerCorrect(question) {
  */
 function isFreeFormAnswerCorrect(question) {
   // ... Code to check free-form answer correctness ...
+  return false;
 }
 
 /**
