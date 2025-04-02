@@ -57,6 +57,14 @@ function isMultipleAnswerCorrect(question) {
 function isFreeFormAnswerCorrect(question) {
   // ... Code to check free-form answer correctness ...
   return false;
+
+  function checkField(field) {
+    if (!field.checkValidity ()) {
+      field.style.backgroundColor = 'pink';
+    } else {
+      field.style.backgroundColor = '';
+    }
+  }
 }
 
 /**
