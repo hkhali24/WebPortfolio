@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function renderQuiz(quizData, container) {
   // ... Code to render the quiz ...
-  const form = document.createElement('form');
-  form.id = 'quiz';
+  const form = document.createElement('quiz');
+  const textField = form.textfield;
 }
 
 /**
@@ -39,6 +39,10 @@ function isSingleAnswerCorrect(question) {
   return false;
 }
 
+isSingleAnswerCorrect.addEventListener("click", function(e) {
+  checkField(radio);
+});
+
 /**
  * Checks if the answers provided for a multiple-answer question are correct.
  * @param {HTMLElement} question - The DOM element representing the question.
@@ -49,6 +53,11 @@ function isMultipleAnswerCorrect(question) {
   return false;
 }
 
+isMultipleAnswerCorrect.addEventListener("click", function(e) {
+  checkField(checkbox);
+});
+
+
 /**
  * Checks if the answer provided for a free-form question is correct.
  * @param {HTMLElement} question - The DOM element representing the question.
@@ -58,6 +67,10 @@ function isFreeFormAnswerCorrect(question) {
   // ... Code to check free-form answer correctness ...
   return false;
 
+  isFreeFormAnswerCorrect.addEventListener("input", function(e) {
+    checkField(text);
+  });
+
   function checkField(field) {
     if (!field.checkValidity ()) {
       field.style.backgroundColor = 'pink';
@@ -66,6 +79,11 @@ function isFreeFormAnswerCorrect(question) {
     }
   }
 }
+
+textField.addEventListener ('input',function(e) {
+  checkField(textField);
+});
+
 
 /**
  * Submits the quiz, checks all answers, calculates the score, and displays it.
@@ -77,7 +95,7 @@ function submitQuiz(e) {
   if(!areAllQuestionsAnswered ()) {
     alert('You must answer all questions before submitting.');
     e.preventDefault();
-    return;
+    return false;
   }
 }
 
