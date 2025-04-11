@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
  * @param {Object} quizData - The data for the quiz including questions and answers.
  * @param {HTMLElement} container - The DOM element where the quiz will be rendered.
  */
+
 function renderQuiz(quizData, container) {
   // ... Code to render the quiz ...
   const form = document.createElement('quiz');
-  const textField = form.textfield;
 }
 
 /**
