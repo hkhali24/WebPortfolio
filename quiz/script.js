@@ -14,10 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
  * @param {Object} quizData - The data for the quiz including questions and answers.
  * @param {HTMLElement} container - The DOM element where the quiz will be rendered.
  */
-
 function renderQuiz(quizData, container) {
   // ... Code to render the quiz ...
-  const form = document.createElement('quiz');
 }
 
 /**
@@ -26,7 +24,6 @@ function renderQuiz(quizData, container) {
  */
 function areAllQuestionsAnswered() {
   // ... Code to check if all questions are answered ...
-  return false;
 }
 
 /**
@@ -36,12 +33,7 @@ function areAllQuestionsAnswered() {
  */
 function isSingleAnswerCorrect(question) {
   // ... Code to check single answer correctness ...
-  return false;
 }
-
-isSingleAnswerCorrect.addEventListener("click", function(e) {
-  checkField(radio);
-});
 
 /**
  * Checks if the answers provided for a multiple-answer question are correct.
@@ -50,13 +42,7 @@ isSingleAnswerCorrect.addEventListener("click", function(e) {
  */
 function isMultipleAnswerCorrect(question) {
   // ... Code to check multiple answer correctness ...
-  return false;
 }
-
-isMultipleAnswerCorrect.addEventListener("click", function(e) {
-  checkField(checkbox);
-});
-
 
 /**
  * Checks if the answer provided for a free-form question is correct.
@@ -65,38 +51,14 @@ isMultipleAnswerCorrect.addEventListener("click", function(e) {
  */
 function isFreeFormAnswerCorrect(question) {
   // ... Code to check free-form answer correctness ...
-  return false;
-
-  isFreeFormAnswerCorrect.addEventListener("input", function(e) {
-    checkField(text);
-  });
-
-  function checkField(field) {
-    if (!field.checkValidity ()) {
-      field.style.backgroundColor = 'pink';
-    } else {
-      field.style.backgroundColor = '';
-    }
-  }
 }
-
-textField.addEventListener ('input',function(e) {
-  checkField(textField);
-});
-
 
 /**
  * Submits the quiz, checks all answers, calculates the score, and displays it.
  * Alerts the user if not all questions have been answered.
  */
-function submitQuiz(e) {
+function submitQuiz() {
   // ... Code to submit the quiz and display the score ...
-  const form = document.getElementById('quiz');
-  if(!areAllQuestionsAnswered ()) {
-    alert('You must answer all questions before submitting.');
-    e.preventDefault();
-    return false;
-  }
 }
 
 /**
