@@ -12,6 +12,25 @@ body {
   Add additional styles here.
 */
 
+nav{
+  border: black double;
+  background: white;
+  border-radius: 4rem;
+  margin: 2.4rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+h1 {
+  color: navy;
+  text-shadow: -.1rem -.1rem orange;
+  letter-spacing: 0.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
 html {
   background-color: beige;
   box-sizing: border-box;
