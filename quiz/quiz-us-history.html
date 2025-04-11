@@ -9,90 +9,10 @@
   <script src="script.js"></script>
 </head>
 <body>
- <form id="quiz" method ="post" novalidate>
   <div id="quiz-container">
     <h1>United States History Quiz</h1>
-    <fieldset>
-    <ol>
-    <li class="single-answer question">
-     Who was the first President of the United States?
-      <label> <input type="radio" data-correct= "true" name= "question1" value="George Washington">George Washington</label>
-      <label> <input type="radio" data-correct= "false" name= "question1" value="Thomas Jefferson">Thomas Jefferson</label>
-      <label> <input type="radio" data-correct= "false" name= "question1" value="Abraham Lincoln">Abraham Lincoln</label>
-      <label> <input type="radio" data-correct= "false" name= "question1" value="Benjamin Franklin">Benjamin Franklin</label>
-    </li>
-    <li class="single-answer question">
-    What year did the American Revolutionary War end?
-      <label> <input type="radio" data-correct= "false" name= "question2" value="1776">1776</label>
-      <label> <input type="radio" data-correct= "false" name= "question2" value="1781">1781</label>
-      <label> <input type="radio" data-correct= "true" name= "question2" value="1783">1783</label>
-      <label> <input type="radio" data-correct= "false" name= "question2" value="1801">1801</label>
-    </li>  
-    <li class="single-answer question">
-    Which document declared American independence from Britain?
-      <label> <input type="radio" data-correct= "false" name= "question3" value="The Constitution">The Constitution</label>
-      <label> <input type="radio" data-correct= "false" name= "question3" value="The Bill of Rights">The Bill of Rights</label>
-      <label> <input type="radio" data-correct= "fasle" name= "question3" value="The Emancipation Proclamation">The Emancipation Proclamation</label>
-      <label> <input type="radio" data-correct= "true" name= "question3" value="The Declaration of Independence">The Declaration of Independence</label>
-    </li> 
-    <li class="single-answer question">
-      What was the main issue of the Civil War?
-      <label> <input type="radio" data-correct= "false" name= "question4" value="Independence from Britain">Independence from Britain</label>
-      <label> <input type="radio" data-correct= "true" name= "question4" value="Abolition of slavery">Abolition of slavery</label>
-      <label> <input type="radio" data-correct= "fasle" name= "question4" value="Women's suffrage">Women's suffrage</label>
-      <label> <input type="radio" data-correct= "false" name= "question4" value="Prohibition">Prohibition</label>
-    </li> 
-    <li class="single-answer question">
-      Who was president during the Great Depression and World War II?
-      <label> <input type="radio" data-correct= "true" name= "question5" value="Franklin D. Roosevelt">Franklin D. Roosevelt</label>
-      <label> <input type="radio" data-correct= "false" name= "question5" value="Harry S. Truman">Harry S. Truman</label>
-      <label> <input type="radio" data-correct= "fasle" name= "question5" value="Woodrow Wilson">Woodrow Wilson</label>
-      <label> <input type="radio" data-correct= "false" name= "question5" value="Dwight D. Eisenhower">Dwight D. Eisenhower</label>
-    </li> 
-    <li class="single-answer question">
-      In what year did women in the United States gain the right to vote?
-      <label> <input type="radio" data-correct= "false" name= "question6" value="1848">1848</label>
-      <label> <input type="radio" data-correct= "true" name= "question6" value="1920">1920</label>
-      <label> <input type="radio" data-correct= "fasle" name= "question6" value="1945">1945</label>
-      <label> <input type="radio" data-correct= "false" name= "question6" value="1965">1965</label>
-    </li> 
-    <li class="multiple-answer question">
-      Select all the founding fathers who were also Presidents of the United States.
-      <label> <input type="checkbox" data-correct= "true" name= "question7" value="George Washington">George Washington</label>
-      <label> <input type="checkbox" data-correct= "true" name= "question7" value="Thomas Jefferson">Thomas Jefferson</label>
-      <label> <input type="checkbox" data-correct= "fasle" name= "question7" value="Benjamin Franklin">Benjamin Franklin</label>
-      <label> <input type="checkbox" data-correct= "true" name= "question7" value="John Adams">John Adams</label>
-    </li> 
-    <li class="multiple-answer question">
-      Which of the following presidents had previously served as vice president? Check all that apply.
-      <label> <input type="checkbox" data-correct= "true" name= "question8" value="George H.W. Bush">George H.W. Bush</label>
-      <label> <input type="checkbox" data-correct= "false" name= "question8" value="Barack Obama">Barack Obama</label>
-      <label> <input type="checkbox" data-correct= "true" name= "question8" value="Lyndon B. Johnson">Lyndon B. Johnson</label>
-      <label> <input type="checkbox" data-correct= "true" name= "question8" value="Richard Nixon">Richard Nixon</label>
-    </li> 
-    <li class="multiple-answer question">
-      Which of the following people were Supreme Court justices? Check all that apply.
-      <label> <input type="checkbox" data-correct= "true" name= "question9" value="Ruth Bader Ginsburg">Ruth Bader Ginsburg</label>
-      <label> <input type="checkbox" data-correct= "false" name= "question9" value="Booker T. Washington">Booker T. Washington</label>
-      <label> <input type="checkbox" data-correct= "fasle" name= "question9" value="Alexander Hamilton">Alexander Hamilton</label>
-      <label> <input type="checkbox" data-correct= "true" name= "question9" value="Thurgood Marshall">Thurgood Marshall</label>
-    </li> 
-    <li class="free-form question">
-      How many original colonies formed the United States?
-      <input type="text" name= "question10" data-correct-answers = "13,thirteen">
-    </li>
-    <li class="free-form question">
-      In what year did the United States declare its independence from Great Britain?
-      <input type="text" name= "question11" data-correct-answers = "1776">
-    </li>
-    <li class="free-form question">
-      How many amendments are there in the United States Bill of Rights?
-      <input type="text" name= "question12" data-correct-answers = "10,ten">
-    </ol>
-    </fieldset>
   </div>
   <button id="submit-btn">Submit</button>
   <div id="result"></div>
-</form>
 </body>
 </html>

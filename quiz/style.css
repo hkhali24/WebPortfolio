@@ -29,7 +29,6 @@ label {
 
 input[type='radio'],
 input[type='checkbox'] {
-  display: fixed;
   margin: .5rem;
   width: auto;
 }
@@ -43,7 +42,6 @@ button {
 
 fieldset {
   margin:  auto;
-  padding: auto;
   background-color: white;
   display: block;
   box-sizing: border-box;
