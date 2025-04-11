@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function renderQuiz(quizData, container) {
   // ... Code to render the quiz ...
-  const quizData = document.getElementById ('quiz-container')
+  const quiz = document.getElementById("quiz-container")
 }
 
 /**
