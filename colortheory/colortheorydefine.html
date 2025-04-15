@@ -71,32 +71,93 @@
         </nav>
     <main>
     <h1 class="display-6 text-center">Color Theory Overview</h1>
-    <p>Color Theory can be defined as the relationship between colors. 
+    <p class="p-3">Color Theory can be defined as the relationship between colors. 
      This relationship is created in a variety of different ways such as, by mixing colors, creating color schemes etc. 
-     Explore the 20 key color theory terms defined below.</p>
-     <dl>
-        <dt><dfn>Primary Colors</dfn></dt>
-        <dd>colors that cannot be created by mixing other colors. These are red, yellow, and blue.</dd>
-        <dt><dfn>Secondary Colors</dfn></dt>
-        <dd>colors that are created by mixing two primary colors. For example, yellow and blue mixed equally will create green. There are three secondary colors in total.</dd>
-        <dt><dfn>Tertiary Colors</dfn></dt>
-        <dd>colors that are created by mixing a primary color with a secondary color. For example, mixing blue and green will create blue green. There are six tertiary colors in total.</dd>
-        <dt><dfn>Complementary Colors</dfn></dt>
-        <dd>colors that are opposite of a color on the color wheel.</dd>
-        <dt><dfn>Triadic Colors</dfn></dt>
-        <dd>colors that are evenly spaced out on the color wheel.</dd>
-        <dt><dfn>Split Colors</dfn></dt>
-        <dd>colors that include one base color and two colors on the opposite side of the color wheel.</dd>
-        <dt><dfn>Analogous Colors</dfn></dt>
-        <dd>colors that are adjacent to each other on the color wheel.</dd>
-        <dt><dfn>Hue</dfn></dt>
-        <dd>is the purest form of a color. There are 12 hues in total which are the primary colors, secondary colors, and tertiary colors.</dd>
-        <dt><dfn>Value of a Hue</dfn></dt>
-        <dd>hue value is the lightness or darkness of a hue.</dd>
-        <dt><dfn>Shades</dfn></dt>
-        <dd>are created by mixing black with a hue.</dd>
-        <dt><dfn>Tints</dfn></dt>
-        <dd>are created by mixing white with a hue.</dd>
+     Click on each button to explore the 20 key color theory terms.</p>
+
+     <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Primary Colors"
+        data-bs-content="Colors that cannot be created by mixing other colors. These are red, yellow, and blue.">
+        Primary Colors
+      </button>
+    </div>
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Secondary Colors"
+        data-bs-content="Colors that are created by mixing two primary colors. For example, yellow and blue mixed equally will create green. There are three secondary colors in total.">
+        Secondary Colors
+      </button>
+    </div>
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Tertiary Colors"
+        data-bs-content="Colors that are created by mixing a primary color with a secondary color. For example, mixing blue and green will create blue green. There are six tertiary colors in total.">
+        Tertiary Colors
+      </button>
+    </div>
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Complementary Colors"
+        data-bs-content="Colors that are opposite of a color on the color wheel.">
+        Complementary Colors
+      </button>
+    </div>
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Triadic Colors"
+        data-bs-content="Colors that are evenly spaced out on the color wheel.">
+        Triadic Colors
+      </button>
+    </div>
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Split Colors"
+        data-bs-content="Colors that include one base color and two colors on the opposite side of the color wheel.">
+        Split Colors
+      </button>
+    </div>
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Analogous Colors"
+        data-bs-content="Colors that are adjacent to each other on the color wheel.">
+        Analogous Colors
+      </button>
+    </div>
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Hue"
+        data-bs-content="Is the purest form of a color. There are 12 hues in total which are the primary colors, secondary colors, and tertiary colors.">
+        Hue
+      </button>
+    </div>
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Value of a Hue"
+        data-bs-content="Hue value is the lightness or darkness of a hue.">
+        Value of a Hue
+      </button>
+    </div>
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Shades"
+        data-bs-content="Are created by mixing black with a hue.">
+        Shades
+      </button>
+    </div>
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Tints"
+        data-bs-content="Are created by mixing white with a hue.">
+        Tints
+      </button>
+    </div>
+
+
+
+
+
+    
         <dt><dfn>Tones</dfn></dt>
         <dd>are created by mixing gray with a hue.</dd>
         <dt><dfn>Contrast</dfn></dt>
@@ -125,6 +186,10 @@
           </h6>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+    </script>
     <script src="https://kit.fontawesome.com/92f7cefde1.js" crossorigin="anonymous"></script>
     <script src="JavaScript.js"></script>
     </body>
