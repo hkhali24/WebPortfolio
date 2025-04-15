@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../normalize.css" rel="stylesheet">
-    <link href="../sitewide.css" rel="stylesheet">
-    <link href="../color-and-type.css" rel="stylesheet">
-    <script src="../JavaScript.js"></script>
-    <script src="https://kit.fontawesome.com/92f7cefde1.js" crossorigin="anonymous"></script>
-    <title>Font Types Article</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Font Types Article</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
-<body id="changing-styles">
-    <nav>
-        <h1>Web Design Portfolio</h1>
-        <ul>
-        <li class="dropdown"><a href= "../index.html">Portfolio</a>
-            <ul>
-                <li><a href="../characanim.html">Character Animation Project</a></li>
-                <li><a href="../digmagcov.html">Digital Magazine Cover Project</a></li>
-                <li><a href="../startupbrandingkit.html" >Start Up Branding Kit Project</a></li>
-                <li><a href="../photorestore.html">Photo Restoration Project</a></li>
-                <li><a href="../quiz/quiz-us-history.html">United States History Quiz</a></li>
-                <li><a href="../quiz/quiz-mine.html">My Portfolio Quiz</a></li>
-            </ul></li>
-    <li><a href= "../resume.html">Resume</a></li>
-     <li class="dropdown"><a href="../colortheory/colortheorydefine.html">Color Theory Overview</a>
-        <ul>
-            <li><a href= "../colortheory/colortheorythemes.html">Color Theory Themes</a></li>
-            <li><a href= "../colortheory/colortheoryarticle.html">Color Theory Article</a></li>
-        </ul></li>
-        <li class="dropdown"><a href="typographoverview.html">Typography Overview</a>
-        <ul>
-             <li><a href= "fonttypearticle.html">Font Types Article</a></li>
-            <li><a href= "typographarticle.html">Typography Article</a></li>
-        </ul></li>
-        <li class="dropdown"><a>Themes Menu</a>
-            <ul>
-                    <li><a href="#" id="navy">Dark Mode</a></li>
-                    <li><a href="#" id="white">Light Mode</a></li>
-                    <li><a href="#" id="smallfont">Small Font</a></li>
-                    <li><a href="#" id="mediumfont">Medium Font</a></li>
-                    <li><a href="#" id="largefont">Large Font</a></li>
-            </ul></li>
-        </ul>
-    </nav>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">My Portfolio</a>
+      <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  role="button"
+                  id="navbar-dropdown" data-bs-toggle="dropdown">
+                  Portfolio
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="../characanim.html">Character Animation Project</a>
+                  <a class="dropdown-item" href="../digmagcov.html">Digital Magazine Cover Project</a>
+                  <a class="dropdown-item" href="../startupbrandingkit.html" >Start Up Branding Kit Project</a>
+                  <a class="dropdown-item" href="../photorestore.html">Photo Restoration Project</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../resume.html">Resume</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  role="button"
+                  id="navbar-dropdown" data-bs-toggle="dropdown">
+                  Color Theory
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="../colortheory/colortheorydefine.html">Color Theory Definitions</a>
+                  <a class="dropdown-item" href="../colortheory/colortheorythemes.html">Color Theory Themes</a>
+                  <a class="dropdown-item" href="../colortheory/colortheoryarticle.html">Color Theory Article</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  role="button"
+                  id="navbar-dropdown" data-bs-toggle="dropdown">
+                  Typography
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href= "typographoverview.html">Typography Overview</a>
+                  <a class="dropdown-item" href="fonttypearticle.html">Font Types Article</a>
+                  <a class="dropdown-item" href="typographarticle.html">Typography Article</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  role="button"
+                  id="navbar-dropdown" data-bs-toggle="dropdown">
+                  Themes Menu
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" id="navy">Dark Mode</a>
+                  <a class="dropdown-item" href="#" id="white">Light Mode</a>
+                  <a class="dropdown-item" href="#" id="smallfont">Small Font</a>
+                  <a class="dropdown-item" href="#" id="mediumfont">Medium Font</a>
+                  <a class="dropdown-item" href="#" id="largefont">Large Font</a>
+                </div>
+              </li>
+          </div>
+          </div>
+        </nav>
     <main>
    <article id="fonttypesarticle">
     <h2>Font Types</h2>
@@ -82,12 +107,15 @@
     <img src="monospacedfont.png" alt="Google Fonts Monospaced">
    </article>
     </main>
-   <footer>
-    <i class="fa-solid fa-envelope"></i>
-    <h3>Connect with Me</h3>
-    <address>
-    <a href="mailto:hkhali24@myportfolioproj.com">hkhali24@myportfolioproj.com</a>
-    </address>
+    <footer>
+        <h6 class="text-center">
+            <i class="fa-solid fa-envelope"></i>
+            <p><em>Connect with Me</em></p>
+            <a href="mailto:hkhali24@myportfolioproj.com">hkhali24@myportfolioproj.com</a>
+          </h6>
     </footer>
-   </body>
-   </html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/92f7cefde1.js" crossorigin="anonymous"></script>
+    <script src="JavaScript.js"></script>
+    </body>
+    </html>
