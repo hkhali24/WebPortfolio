@@ -4,37 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <script>
-        function toggleDisplay(elem) {
-            if (getComputedStyle (elem).display === "none" ){
-                elem.style.display = "block";
-            } else {
-                elem.style.display = "none";
-            }
-        }
-
-        function toogleExperience (e) {
-            const section = e.currentTarget;
-            const experience = section.nextElementSibling;
-        toggleDisplay (experience);
-
-            const star = section.querySelector('.fa-star');
-            if (star) {
-                star.classList.toggle ('fa-star-click');
-        }
-    }
-
-        window.addEventListener('load', function () {
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(function (section) {
-            section.addEventListener('click', toogleExperience);
-            });
-        });
-
-    </script>
     <title>Resume</title>
 </head>
-<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">My Portfolio</a>
       <button class="navbar-toggler" type="button" 
@@ -85,63 +57,71 @@
       </div>
     </nav>
     <main>
-    <div class="section">
-    <h2><strong>Education</strong></h2>
-    <i class="fa-solid fa-star"></i>
-    </div>
-    <div class="experience">
-        <div>Bachelors in Marketing</div>
-        <div>Authentic Business University</div>
-        <div>Graduated 2019</div>
-    </div>
-    <div class="section">
-    <h2><strong>Work Experience</strong></h2>
-    <i class="fa-solid fa-star"></i>
-    </div>
-    <div class="experience"><strong>
-            Product Designer
-            2022-Present
-            </strong>
-            <div>Stunning Stationery</div>
-            <ul>
+      <section id="education" class="p-2 p-lg-3 mb-2 mb-lg-4 border rounded shadow">
+        <h1 class="text-uppercase display-6">Education</h1>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Authentic Business University</h5>
+            <h6 class="card-subtitle mb-2">Bachelor of Science, Marketing</h6>
+            <h6 class="card-subtitle mb-2 text-muted fst-italic">Graduated 2019</h6>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="p-2 p-lg-3 mb-2 mb-lg-4 border rounded shadow">
+        <h1 class="text-uppercase display-6">Experience</h1>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Product Designer</h5>
+            <h6 class="card-subtitle mb-2">Stunning Stationery</h6>
+            <h6 class="card-subtitle mb-2 text-muted fst-italic">2022-Present</h6>
+            <ul class="card-text">
+              <ul>
                 <li>Create and design aesthetically appealing and functional stationery</li>
                 <li>Present designs to key stakeholders</li>
                 <li>Refine designs based on user feedback</li>
             </ul>
-    <strong>
-            Marketing Analyst
-            2019-2022
-            </strong>
-            <div>Stunning Stationery</div>
+          </div>
+        </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Marketing Analyst</h5>
+          <h6 class="card-subtitle mb-2">Stunning Stationery</h6>
+          <h6 class="card-subtitle mb-2 text-muted fst-italic">2019-2022</h6>
+          <ul class="card-text">
             <ul>
-                <li>Conduct market research and stay informed on latest trends</li>
+              <li>Conduct market research and stay informed on latest trends</li>
                 <li>Design customers satisfaction surveys and evaluate the results</li>
                 <li>Present findings to key stakeholders</li>
-            </ul>
-    <strong>
-            Marketing Assistant
-            2017-2019
-            </strong>
-            <div>Authentic Business University</div>
-            <ul>
-                <li>Create documents, newsletters, and design content on social media platforms</li>
-                <li>Maintain brand identity on social media and website</li>
-                <li>Collaborate with team and other departments for events</li>
-            </ul>
+          </ul>
         </div>
-    <div class="section">
-    <h2><strong>Skills</strong></h2>
-    <i class="fa-solid fa-star"></i>
-    </div>
-     <div class="experience">
-        <ul>
-            <li>Adobe Animate</li>
-            <li>Adobe Photoshop</li>
-            <li>HTML</li>
-            <li>Microsoft Teams, Word, PowerPoint, and Excel</li>
-            <li>Design Software 2.0</li>
-        </ul>
-    </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Marketing Assistant</h5>
+          <h6 class="card-subtitle mb-2">Authentic Business University</h6>
+          <h6 class="card-subtitle mb-2 text-muted fst-italic">2017-2019</h6>
+          <ul class="card-text">
+            <ul>
+              <li>Create documents, newsletters, and design content on social media platforms</li>
+              <li>Maintain brand identity on social media and website</li>
+              <li>Collaborate with team and other departments for events</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="education" class="p-2 p-lg-3 mb-2 mb-lg-4 border rounded shadow">
+      <h1 class="text-uppercase display-6">Skills</h1>
+      <div class="card mb-4">
+        <div class="experience">
+          <ul>
+              <li>Adobe Animate</li>
+              <li>Adobe Photoshop</li>
+              <li>HTML</li>
+              <li>Microsoft Teams, Word, PowerPoint, and Excel</li>
+              <li>Design Software 2.0</li>
+          </ul>
+      </div>
+    </section>
     </main>
 <footer>
     <h6 class="text-center">
@@ -150,7 +130,6 @@
         <a href="mailto:hkhali24@myportfolioproj.com">hkhali24@myportfolioproj.com</a>
       </h6>
 </footer>
-<script src="JavaScript.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/92f7cefde1.js" crossorigin="anonymous"></script>
 </body>
