@@ -71,41 +71,103 @@
         </nav>
     <main>
     <h1 class="display-6 text-center">Typography Overview</h1>
-<p>Typography can be defined as applying the proper typeface at the right time. 
+<p class="p-3">Typography can be defined as applying the proper typeface at the right time. 
     The main purpose of typography is to ensure that the message is clear and readable.
-    Below are the 10 key typography terms and their definitions.</p>
-    <dl>
-        <dt><dfn>X-Height</dfn></dt>
-        <dd>is the height of a lowercase letter x and can differ among different typefaces.</dd>
-        <dt><dfn>Cap Height</dfn></dt>
-        <dd>is the height of the uppercase letter from the baseline.</dd>
-        <dt><dfn>Ascender Line</dfn></dt>
-        <dd>is the stroke of the lowercase letter that is above the x-height.</dd>
-        <dt><dfn>Descender Line</dfn></dt>
-        <dd>is the stroke of a lowercase letter that goes below the base line.</dd>
-        <dt><dfn>Baseline</dfn></dt>
-        <dd>is the line that all the letters align to.</dd>
-        <dt><dfn>Serif</dfn></dt>
-        <dd>is the corners or feet that are on the end of the letters.</dd>
-        <dt><dfn>Bracket</dfn></dt>
-        <dd>is the connecter between the serif and the stems of the letter.</dd>
-        <dt><dfn>Terminal</dfn></dt>
-        <dd>is the stoke at the end of a letter that does not have serif.</dd>
-        <dt><dfn>Loop</dfn></dt>
-        <dd>is found at the bottom of some lowercase letters, for example the letter g.</dd>
-        <dt><dfn>Stem</dfn></dt>
-        <dd>is a vertical or diagonal stroke, for example letter h has a stem.</dd>
-    </dl>
+    Below are the 10 key typography terms and their definitions. Click on each button to find out more.</p>
+
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Stem"
+        data-bs-content="Is a vertical or diagonal stroke, for example letter h has a stem.">
+        Stem
+      </button>
+    </div>
+    
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Loop"
+        data-bs-content="Is found at the bottom of some lowercase letters, for example the letter g.">
+        Loop
+      </button>
+    </div>
+
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Terminal"
+        data-bs-content="Is the stoke at the end of a letter that does not have serif.">
+        Terminal
+      </button>
+    </div>
+    
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Bracket"
+        data-bs-content="Is the connecter between the serif and the stems of the letter.">
+        Bracket
+      </button>
+    </div>
+
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Serif"
+        data-bs-content="Is the corners or feet that are on the end of the letters.">
+        Serif
+      </button>
+    </div>
+    
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Baseline"
+        data-bs-content="Is the line that all the letters align to.">
+        Baseline
+      </button>
+    </div>
+
+
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Descender Line"
+        data-bs-content="Is the stroke of a lowercase letter that goes below the base line.">
+        Descender Line
+      </button>
+    </div>
+    
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Ascender Line"
+        data-bs-content="Is the stroke of the lowercase letter that is above the x-height.">
+        Ascender Line
+      </button>
+    </div>
+
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="X-Height"
+        data-bs-content="Is the height of a lowercase letter x and can differ among different typefaces.">
+        X-Height
+      </button>
+    </div>
+
+    <div class="container m-4">
+      <button type="button" class="btn btn-info"
+        data-bs-toggle="popover" title="Cap Height"
+        data-bs-content="Is the height of the uppercase letter from the baseline.">
+        Cap Height
+    </button>
     </main>
     <footer>
-        <h6 class="text-center">
-            <i class="fa-solid fa-envelope"></i>
-            <p><em>Connect with Me</em></p>
-            <a href="mailto:hkhali24@myportfolioproj.com">hkhali24@myportfolioproj.com</a>
-          </h6>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/92f7cefde1.js" crossorigin="anonymous"></script>
-    <script src="JavaScript.js"></script>
-    </body>
-    </html>
+      <h6 class="text-center">
+          <i class="fa-solid fa-envelope"></i>
+          <p><em>Connect with Me</em></p>
+          <a href="mailto:hkhali24@myportfolioproj.com">hkhali24@myportfolioproj.com</a>
+        </h6>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+  </script>
+  <script src="https://kit.fontawesome.com/92f7cefde1.js" crossorigin="anonymous"></script>
+  <script src="JavaScript.js"></script>
+  </body>
+  </html>
